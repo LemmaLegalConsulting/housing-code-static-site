@@ -2,12 +2,17 @@
 This site contains information for tenants about the responsibilities of their landlord and provides links to helpful tools. Demo: [https://housing-code.web.app](https://housing-code.web.app)
 
 # to run
-`yarn start` or `npm start`
+Use Node 22.23.4 or newer. Run `npm ci`, then `npm start`.
 
 # to build static pages
-`yarn build` or `npm run build` \
+`npm run build` \
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build uses Vite instead of the retired Create React App toolchain.
+Use npm and `package-lock.json`; the obsolete Yarn lockfile has been removed.
+Run `npm test` to check rendering, language selection, and category navigation.
+Run `npm run preview` to serve the production build locally.
 
 # To deploy to github pages
 
